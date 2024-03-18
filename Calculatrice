@@ -1,0 +1,68 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Soustraction");
+            Console.WriteLine("3. Division entière");
+            Console.WriteLine("4. Division avec reste");
+            Console.WriteLine("5. Multiplication");
+            
+
+            Console.Write("Choisissez une opération (1-6) : ");
+            string choix = Console.ReadLine();
+
+            
+            }
+
+            Console.Write("Entrez le premier opérande : ");
+            double operande1;
+
+            Console.Write("Entrez le second opérande : ");
+            double operande2;
+
+            double resultat = 0;
+
+            if (choix == "1")
+            {
+                resultat = operande1 + operande2;
+            }
+            else if (choix == "2")
+            {
+                resultat = operande1 - operande2;
+            }
+            else if (choix == "3")
+            {
+                if (operande2 == 0)
+                {
+                    Console.WriteLine("Division par zéro impossible.");
+                    continue; 
+                }
+                resultat = (int)(operande1 / operande2);
+            }
+            else if (choix == "4")
+            {
+                if (operande2 == 0)
+                {
+                    Console.WriteLine("Division par zéro impossible.");
+                    continue; 
+                }
+                resultat = operande1 % operande2;
+            }
+            else if (choix == "5")
+            {
+                resultat = operande1 * operande2;
+            }
+            else
+            {
+                Console.WriteLine("Choix invalide.");
+                continue; 
+            }
+
+            Console.WriteLine("Résultat : " resultat);
+            
+    }
+}
