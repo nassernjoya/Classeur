@@ -1,1 +1,1 @@
-code pour la calculatrice.￼Enter
+code pour la calculatrice.
